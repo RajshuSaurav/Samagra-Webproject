@@ -1,0 +1,21 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd Samagra_Backend && npm start",
+    "prebuild": "cd Samagra_Backend && npm install & cd samagra && npm install",
+    "build": "cd samagra && npm run build",
+    "postbuild": "move samagra/build Samagra_Backend/src/public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18 <19"
+  },
+  "dependencies": {
+    "cloudinary": "^2.0.3"
+  }
+}
